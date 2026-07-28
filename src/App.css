@@ -12,3 +12,11 @@ body {
 section {
   margin-top: 20px;
 }
+
+.skills-heading, .projects-heading {
+  text-align: center;
+  font-size: 36px;
+  margin: 30px;
+  color: red;
+}
+
