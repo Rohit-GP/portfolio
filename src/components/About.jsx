@@ -4,7 +4,7 @@ import './About.css'
 const STATS = [
   { label: 'CGPA', value: '9.5 / 10.0' },
   { label: 'DSA Problems Solved', value: '250+' },
-  { label: 'Certification', value: 'Oracle Certified — Java SE' },
+  { label: 'Certification', value: 'Oracle Certified - Java SE' },
 ]
 
 function About() {
@@ -42,7 +42,7 @@ function About() {
             I'm an Information Technology undergraduate at Saveetha
             Engineering College, Chennai, with a strong foundation in Java,
             object-oriented design, and database systems. I like taking
-            projects from a rough idea to a working, secured application —
+            projects from a rough idea to a working, secured application -
             most recently a full-stack blogging platform built with Spring
             Boot, Spring Security, and React. Outside of coursework, I spend
             time on LeetCode sharpening my grip on trees, graphs, and dynamic

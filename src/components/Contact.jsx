@@ -14,13 +14,18 @@ function Contact() {
         </div>
 
         <div className="contact__links">
-          <a href="mailto:youremail@example.com" className="contact__link">
-            youremail@example.com
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=youremail@gmail.com&su=Portfolio%20Inquiry"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact__link"
+          >
+            Email
           </a>
-          <a href="https://github.com/yourusername" className="contact__link">
+          <a href="https://github.com/Rohit-GP" className="contact__link" target="_blank">
             GitHub
           </a>
-          <a href="https://linkedin.com/in/yourusername" className="contact__link">
+          <a href="https://linkedin.com/in/Rohit-GP" className="contact__link" target="_blank">
             LinkedIn
           </a>
         </div>

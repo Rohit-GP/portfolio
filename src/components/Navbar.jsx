@@ -26,7 +26,7 @@ function Navbar() {
       <div className="container navbar__inner">
         <a href="#home" className="navbar__logo">
           <span className="navbar__logo-bracket">{'<'}</span>
-          Your Name
+          GPR
           <span className="navbar__logo-bracket">{'/>'}</span>
         </a>
 
@@ -38,7 +38,7 @@ function Navbar() {
           ))}
         </nav>
 
-        <a href="#contact" className="navbar__cta navbar__cta--desktop">
+        <a href="/resume.pdf" className="navbar__cta navbar__cta--desktop" target="_blank">
           Resume
         </a>
 

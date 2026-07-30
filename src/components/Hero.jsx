@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './Hero.css'
+import profile from '../assets/PP.jpg'
 
 const ROLES = [
   'Full-Stack Developer',
@@ -26,7 +27,7 @@ function Hero() {
       <div className="container hero__inner">
         <div className="hero__content">
           <span className="eyebrow">Portfolio</span>
-          <h1 className="hero__name">Your Name</h1>
+          <h1 className="hero__name">Rohit GP</h1>
           <p className="hero__role" aria-live="polite">
             {ROLES[roleIndex]}
           </p>
@@ -86,7 +87,7 @@ function Hero() {
 
           <div className="hero__frame">
             <img
-              src="https://placehold.co/420x420/eaeefb/24399c?text=Photo"
+              src={profile}
               alt="Portrait placeholder"
             />
           </div>

@@ -35,7 +35,7 @@ function Skills() {
         <h2 className="section-heading">What I build with</h2>
         <p className="section-lede">
           A snapshot of the languages, frameworks, and tools I reach for most
-          — organized by category, not by guesswork.
+          - organized by category, not by guesswork.
         </p>
 
         <div className="skills__tabs" role="tablist">

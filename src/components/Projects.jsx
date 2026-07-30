@@ -65,7 +65,7 @@ function Projects() {
         <h2 className="section-heading">Selected work</h2>
         <p className="section-lede">
           Projects where I took an idea through design, implementation, and
-          a working deployment — not just a tutorial follow-along.
+          a working deployment - not just a tutorial follow-along.
         </p>
 
         <div className="project-grid">
