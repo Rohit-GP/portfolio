@@ -1,0 +1,112 @@
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 36px -28px rgba(16, 24, 39, 0.45);
+  border-color: var(--accent);
+}
+
+.project-card__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.project-card__header h3 {
+  font-size: 20px;
+  color: var(--ink);
+}
+
+.project-card__timeline {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--slate-light);
+}
+
+.project-card__summary {
+  margin-top: 12px;
+}
+
+.project-card__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.project-card__stack span {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.project-card__highlights {
+  margin: 18px 0 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.project-card__highlights li {
+  color: var(--slate);
+  font-size: 14.5px;
+  line-height: 1.6;
+}
+
+.project-card__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 20px;
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.project-card__chevron {
+  transition: transform 0.2s ease;
+  display: inline-block;
+}
+
+.project-card__chevron.is-open {
+  transform: rotate(180deg);
+}
+
+.project-card--placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border-style: dashed;
+  color: var(--slate-light);
+}
+
+.project-card__placeholder-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  margin-bottom: 8px;
+}

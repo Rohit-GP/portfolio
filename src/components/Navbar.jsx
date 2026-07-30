@@ -1,17 +1,73 @@
-import "./Navbar.css";
+import { useEffect, useState } from 'react'
+import './Navbar.css'
+
+const LINKS = [
+  { label: 'Home', href: '#home' },
+  { label: 'About', href: '#about' },
+  { label: 'Skills', href: '#skills' },
+  { label: 'Projects', href: '#projects' },
+  { label: 'Contact', href: '#contact' },
+]
 
 function Navbar() {
-  return (
-    <nav classname="navbar">
-      <h2 classname="logo">My Portfolio</h2>
+  const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
 
-      <ul className="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  );
+  // useEffect: track scroll position to add a subtle shadow/border once the
+  // page has moved past the hero, like a sticky IDE tab bar
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 12)
+    window.addEventListener('scroll', onScroll)
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  return (
+    <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
+      <div className="container navbar__inner">
+        <a href="#home" className="navbar__logo">
+          <span className="navbar__logo-bracket">{'<'}</span>
+          Your Name
+          <span className="navbar__logo-bracket">{'/>'}</span>
+        </a>
+
+        <nav className="navbar__links navbar__links--desktop">
+          {LINKS.map((link) => (
+            <a key={link.href} href={link.href}>
+              {link.label}
+            </a>
+          ))}
+        </nav>
+
+        <a href="#contact" className="navbar__cta navbar__cta--desktop">
+          Resume
+        </a>
+
+        <button
+          className="navbar__menu-btn"
+          aria-label="Toggle navigation menu"
+          aria-expanded={menuOpen}
+          onClick={() => setMenuOpen((open) => !open)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
+      </div>
+
+      {menuOpen && (
+        <nav className="navbar__links navbar__links--mobile">
+          {LINKS.map((link) => (
+            <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)}>
+              {link.label}
+            </a>
+          ))}
+          <a href="#contact" className="navbar__cta" onClick={() => setMenuOpen(false)}>
+            Resume
+          </a>
+        </nav>
+      )}
+    </header>
+  )
 }
 
-export default Navbar;
+export default Navbar

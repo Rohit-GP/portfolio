@@ -1,19 +1,46 @@
-.about {
-  text-align: center;
-  padding: 60px 20px;
+.about__grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 48px;
+  align-items: start;
 }
 
-.about h2 {
-  margin-bottom: 20px;
+.about__paragraph {
+  font-size: 16.5px;
 }
 
-.about p {
-  max-width: 700px;
-  margin: auto;
-  line-height: 1.8;
+.about__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
-.about-section {
-  margin-top: 30px;
-  margin-bottom: 60px;
+.about__stat-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+}
+
+.about__stat-value {
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 0 0 4px;
+}
+
+.about__stat-label {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--slate-light);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+@media (max-width: 780px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
 }
