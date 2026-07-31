@@ -37,7 +37,7 @@
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 20px 22px;
+  padding: 15px 22px;
   animation: chip-fade 0.35s ease;
   transition: transform 0.18s ease, border-color 0.18s ease;
 }
@@ -59,6 +59,14 @@
 
 .skill-card__level--learning {
   color: #d8a657;
+}
+
+.skill-card__level--comfortable {
+  color: yellowgreen; 
+}
+
+.skill-card__level--core {
+  color: var(--accent-dark); 
 }
 
 .skill-card__name {

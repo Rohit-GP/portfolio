@@ -7,7 +7,7 @@ const PROJECTS = [
     timeline: 'Feb 2026 – Mar 2026',
     stack: ['Java', 'Spring Boot', 'Spring Security', 'JWT', 'React', 'MySQL', 'REST APIs'],
     github: 'https://github.com/Rohit-GP/blog-app',
-    demo: '',
+    demo: 'https://blog-app-livid-alpha.vercel.app/',
     summary:
       'A responsive full-stack blogging platform for creating, editing, and publishing posts with real-time UI updates.',
     highlights: [

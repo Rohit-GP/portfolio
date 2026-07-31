@@ -22,24 +22,23 @@ const SKILLS = [
   { name: 'Git', category: 'Tools', level: 'Core' },
   { name: 'GitHub', category: 'Tools', level: 'Core' },
   { name: 'VS Code', category: 'Tools', level: 'Core' },
-  { name: 'IntelliJ IDEA', category: 'Tools', level: 'Core' },
 
   { name: 'OOP', category: 'Core', level: 'Core' },
   { name: 'Data Structures & Algorithms', category: 'Core', level: 'Core' },
-  { name: 'RESTful APIs', category: 'Core', level: 'Comfortable' },
+  { name: 'RESTful APIs', category: 'Core', level: 'Core' },
   { name: 'JWT Authentication', category: 'Core', level: 'Comfortable' },
   { name: 'ML Fundamentals', category: 'Core', level: 'Learning' },
 ]
 
-const FILTERS = ['All', 'Languages', 'Frameworks', 'Tools', 'Core']
+const FILTERS = ['Featured', 'Languages', 'Frameworks', 'Tools', 'Core']
 
 function Skills() {
   // useState + event handling: clicking a pill filters which skill cards show
-  const [activeFilter, setActiveFilter] = useState('All')
+  const [activeFilter, setActiveFilter] = useState('Featured')
 
   const visibleSkills =
-    activeFilter === 'All'
-      ? SKILLS
+    activeFilter === 'Featured'
+      ? SKILLS.filter((skill) => skill.level === 'Core')
       : SKILLS.filter((skill) => skill.category === activeFilter)
 
   return (
@@ -49,7 +48,7 @@ function Skills() {
         <h2 className="section-heading">What I build with</h2>
         <p className="section-lede">
           A snapshot of the languages, frameworks, and tools I reach for most
-          — organized by category, not by guesswork.
+          - organized by category, not by guesswork.
         </p>
 
         <div className="skills__tabs" role="tablist">

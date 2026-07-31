@@ -7,7 +7,15 @@ const CERTIFICATES = [
     date: 'Issued Dec 2025',
     description:
       'Demonstrated expertise in core Java, OOP, memory management, JPMS, Streams API, and concurrency.',
-    link: 'https://drive.google.com/file/d/1o6C0ef35_BpRz1j1ZPQ3-Ye3u0z6t2RO/view?usp=drive_link',
+    link: 'https://catalog-education.oracle.com/pls/certview/sharebadge?id=DD1A5DC320120C113874BF7F7D12EEB98C861E798FD9DF87823704056000F766',
+  },
+  {
+    name: 'Google AI Essentials',
+    issuer: 'Google (Coursera)',
+    date: 'Issued Dec 2025',
+    description:
+      'Demonstrated knowledge of generative AI, prompt engineering, responsible AI, and practical AI applications.',
+    link: 'https://www.coursera.org/account/accomplishments/verify/5R71TZE52041',
   },
 ]
 
