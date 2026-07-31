@@ -38,7 +38,7 @@ function ProjectCard({ project }) {
           </svg>
           GitHub
         </a>
-        <a href={project.demo} className="project-card__link" target="_blank" rel="noreferrer">
+        {/* <a href={project.demo} className="project-card__link" target="_blank" rel="noreferrer">
           <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
             <path
               d="M6 3H3a1 1 0 0 0-1 1v9a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1v-3M9 3h4v4M13 3 6.5 9.5"
@@ -49,7 +49,7 @@ function ProjectCard({ project }) {
             />
           </svg>
           Live Demo
-        </a>
+        </a> */}
       </div>
 
       <div className="project-card__stack">

@@ -39,6 +39,38 @@
   margin: 0;
 }
 
+.about__stat-card {
+  position: relative;
+}
+
+.about__leetcode-btn {
+  position: absolute;
+  top: 30px;
+  right: 25px;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+  background: rgba(255, 161, 22, 0.08);
+
+  transition: .2s ease;
+}
+
+.about__leetcode-btn:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 161, 22, 0.15);
+}
+
+.about__leetcode-btn img {
+  width: 18px;
+  height: 18px;
+}
+
 @media (max-width: 780px) {
   .about__grid {
     grid-template-columns: 1fr;

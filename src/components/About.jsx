@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
 import './About.css'
+const LEETCODE_ICON = 
+  "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/leetcode/leetcode-original.svg";
 
 const STATS = [
   { label: 'CGPA', value: '9.5 / 10.0' },
-  { label: 'DSA Problems Solved', value: '250+' },
+  { label: 'DSA Problems Solved', value: '200+', link: 'https://leetcode.com/u/Rohit_GP/', },
   { label: 'Certification', value: 'Oracle Certified - Java SE' },
 ]
 
@@ -35,7 +37,7 @@ function About() {
     <section id="about" ref={sectionRef}>
       <div className="container">
         <span className="eyebrow">About</span>
-        <h2 className="section-heading">A bit about how I work</h2>
+        <h2 className="section-heading">A Little About Me</h2>
 
         <div className={`about__grid reveal ${visible ? 'is-visible' : ''}`}>
           <p className="about__paragraph">
@@ -56,6 +58,18 @@ function About() {
               <div className="about__stat-card" key={stat.label}>
                 <p className="about__stat-value">{stat.value}</p>
                 <p className="about__stat-label">{stat.label}</p>
+
+                {stat.link && (
+                  <a
+                    href={stat.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="about__leetcode-btn"
+                    aria-label="LeetCode Profile"
+                  >
+                    <img src={LEETCODE_ICON} alt="" />
+                  </a>
+                )}
               </div>
             ))}
           </div>

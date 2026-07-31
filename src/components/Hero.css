@@ -154,9 +154,12 @@
   aspect-ratio: 1 / 1;
   border-radius: 16px;
   overflow: hidden;
-  border: 1px solid var(--line);
+  border: 2px solid var(--accent);
   background: var(--surface);
-  box-shadow: 0 20px 40px -24px rgba(16, 24, 39, 0.35);
+  box-shadow:
+    0 0 0 6px var(--paper),
+    0 0 0 7px var(--line),
+    0 20px 45px -20px rgba(91, 140, 255, 0.35);
 }
 
 .hero__frame img {

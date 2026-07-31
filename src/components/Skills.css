@@ -38,7 +38,9 @@
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 15px 22px;
-  animation: chip-fade 0.35s ease;
+  /* animation: chip-fade 0.35s ease; */
+  opacity: 0;
+  animation: card-in 0.5s ease forwards;
   transition: transform 0.18s ease, border-color 0.18s ease;
 }
 
@@ -46,6 +48,61 @@
   transform: translateY(-2px);
   border-color: var(--accent);
 }
+
+.skill-card__icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: rgba(91, 140, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+}
+
+.skill-card__img {
+  width: 19px;
+  height: 19px;
+  object-fit: contain;
+}
+
+.skill-card__img--invert {
+  filter: invert(1);
+}
+
+.skill-card__svg {
+  width: 18px;
+  height: 18px;
+  color: var(--accent-dark);
+}
+
+.skill-card__content {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.skill-card__icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: rgba(91, 140, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-bottom: 0;   /* remove old bottom margin */
+}
+
+.skill-card__name {
+  margin: 0;
+}
+
+.skill-card__level {
+  display: block;
+  margin-bottom: 12px;
+}
+
 
 .skill-card__level {
   display: block;
@@ -77,10 +134,10 @@
   margin: 0;
 }
 
-@keyframes chip-fade {
+@keyframes card-in {
   from {
     opacity: 0;
-    transform: translateY(6px);
+    transform: translateY(10px);
   }
   to {
     opacity: 1;

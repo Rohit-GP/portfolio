@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import './Hero.css'
-import profile from '../assets/PP.jpg'
+import profile from '../assets/pp.jpeg'
 
 const ROLES = [
   'Full-Stack Developer',
