@@ -1,16 +1,37 @@
-# React + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React + Vite portfolio site.
 
-Currently, two official plugins are available:
+## Run locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+Then open the local URL Vite prints (usually http://localhost:5173).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Folder structure
 
-## Expanding the ESLint configuration
+```
+src/
+├── components/
+│   ├── Navbar.jsx / Navbar.css
+│   ├── Hero.jsx / Hero.css
+│   ├── About.jsx / About.css
+│   ├── Skills.jsx / Skills.css
+│   ├── Projects.jsx / Projects.css
+│   └── Contact.jsx / Contact.css
+├── App.jsx
+├── main.jsx
+└── index.css
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Before you submit / deploy
+
+1. Replace **"Your Name"** in `Navbar.jsx` and `Hero.jsx` with your actual name.
+2. Swap the placeholder photo URL in `Hero.jsx` for a real image (drop it in
+   `public/` and reference it, e.g. `/profile.jpg`).
+3. Add a real `resume.pdf` file inside `public/` so the "Download Resume"
+   button works — the download link is already wired to `/resume.pdf`.
+4. Update the email/GitHub/LinkedIn links in `Contact.jsx`.

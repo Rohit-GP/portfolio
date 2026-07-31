@@ -1,13 +1,13 @@
 :root {
-  --ink: #101827;
-  --paper: #f6f7f4;
-  --surface: #ffffff;
-  --slate: #48505c;
-  --slate-light: #6b7280;
-  --line: #e3e6e1;
-  --accent: #3452d9;
-  --accent-dark: #24399c;
-  --accent-soft: #eaeefb;
+  --ink: #edeff4;
+  --paper: #0a0d13;
+  --surface: #12151f;
+  --slate: #a6adbb;
+  --slate-light: #7a8293;
+  --line: #242938;
+  --accent: #5b8cff;
+  --accent-dark: #8fb0ff;
+  --accent-soft: rgba(91, 140, 255, 0.14);
   --radius: 10px;
   --font-display: 'Space Grotesk', 'Inter', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -24,7 +24,9 @@ html {
 
 body {
   margin: 0;
-  background: var(--paper);
+  background-color: var(--paper);
+  background-image: radial-gradient(rgba(237, 239, 244, 0.06) 1px, transparent 1px);
+  background-size: 22px 22px;
   color: var(--ink);
   font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;

@@ -5,6 +5,7 @@ const LINKS = [
   { label: 'Home', href: '#home' },
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
+  { label: 'Certificates', href: '#certificates' },
   { label: 'Projects', href: '#projects' },
   { label: 'Contact', href: '#contact' },
 ]
@@ -32,13 +33,17 @@ function Navbar() {
 
         <nav className="navbar__links navbar__links--desktop">
           {LINKS.map((link) => (
-            <a key={link.href} href={link.href}>
+            <a key={link.href} href={link.href}>  
               {link.label}
             </a>
           ))}
         </nav>
 
-        <a href="/resume.pdf" className="navbar__cta navbar__cta--desktop" target="_blank">
+        <a
+          href="/resume.pdf"
+          className="navbar__cta navbar__cta--desktop"
+          target="_blank"
+        >
           Resume
         </a>
 
@@ -61,7 +66,12 @@ function Navbar() {
               {link.label}
             </a>
           ))}
-          <a href="#contact" className="navbar__cta" onClick={() => setMenuOpen(false)}>
+          <a
+            href="/resume.pdf"
+            download
+            className="navbar__cta"
+            onClick={() => setMenuOpen(false)}
+          >
             Resume
           </a>
         </nav>
