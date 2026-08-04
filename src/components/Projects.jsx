@@ -3,13 +3,37 @@ import './Projects.css'
 
 const PROJECTS = [
   {
+    name: 'Agentic NOC',
+    timeline: 'Jul 2026 – Present',
+    stack: [
+      'Python',
+      'RestAPI',
+      'LangGraph',
+      'Spring Boot',
+      'React',
+      'Redis',
+      'Docker',
+      'SQLite'
+    ],
+    github: 'https://github.com/Rohit-GP/agentic-noc',
+    demo: '',
+    summary:
+    'An AI-powered observability platform that analyzes system resources and network health to detect issues and identify root causes.',
+    highlights: [
+      'Engineered a modular Python-based diagnostics engine supporting system (CPU, memory, disk) and network/application (DNS, Ping, TCP ports, HTTP, SSL, service) health monitoring.',
+      'Built an extensible probe framework that produces structured evidence for AI-driven diagnosis, allowing new monitoring capabilities to be added with minimal code changes.',
+      'Implemented an end-to-end AI-assisted observability pipeline using Spring Boot, React, Redis, Docker, and LangGraph for asynchronous diagnostics, root cause analysis, confidence scoring, and remediation suggestions.',
+    ],
+  },
+
+  {
     name: 'BlogApp',
     timeline: 'Feb 2026 – Mar 2026',
     stack: ['Java', 'Spring Boot', 'Spring Security', 'JWT', 'React', 'MySQL', 'REST APIs'],
     github: 'https://github.com/Rohit-GP/blog-app',
     demo: 'https://blog-app-livid-alpha.vercel.app/',
     summary:
-      'A responsive full-stack blogging platform for creating, editing, and publishing posts with real-time UI updates.',
+      'A responsive full-stack blogging platform that enables users to create, edit, and publish posts with secure authentication and real-time UI updates.',
     highlights: [
       'Secured backend REST endpoints using Spring Security and stateless JWT authentication, controlling role-based access to protected resources.',
       'Designed a normalized MySQL relational database schema and integrated Spring Data JPA/JDBC for optimized querying and data persistence.',
