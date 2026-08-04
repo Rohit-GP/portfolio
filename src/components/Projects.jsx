@@ -7,7 +7,7 @@ const PROJECTS = [
     timeline: 'Aug 2026 – Present',
     stack: [
       'Python',
-      'RestAPI',
+      'FastAPI',
       'LangGraph',
       'Spring Boot',
       'React',
