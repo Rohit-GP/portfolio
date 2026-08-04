@@ -1,11 +1,9 @@
-
-
-
-
 .cert-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 .cert-card {
@@ -71,6 +69,7 @@
   font-size: 13px;
   font-weight: 500;
   color: var(--accent);
+  margin-top: auto;
 }
 
 .cert-card__link:hover {
