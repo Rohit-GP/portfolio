@@ -4,7 +4,7 @@ import './Projects.css'
 const PROJECTS = [
   {
     name: 'Agentic NOC',
-    timeline: 'Jul 2026 – Present',
+    timeline: 'Aug 2026 – Present',
     stack: [
       'Python',
       'RestAPI',
