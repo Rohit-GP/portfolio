@@ -41,7 +41,7 @@ function Hero() {
           <div className="hero__actions">
             <a
               className="hero__btn hero__btn--primary"
-              href="/resume.pdf"
+              href="/resume1.pdf"
               download
             >
               Download Resume
