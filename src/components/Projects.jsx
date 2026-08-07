@@ -3,26 +3,25 @@ import './Projects.css'
 
 const PROJECTS = [
   {
-    name: 'Agentic NOC',
+    name: 'InfraPilot',
     timeline: 'Aug 2026 – Present',
     stack: [
       'Python',
       'FastAPI',
       'LangGraph',
-      'Spring Boot',
       'React',
-      'Redis',
-      'Docker',
-      'SQLite'
+      'Redis Streams',
+      'PostgreSQL',
+      'Docker'
     ],
     github: 'https://github.com/Rohit-GP/agentic-noc',
     demo: '',
     summary:
-    'An AI-powered observability platform that analyzes system resources and network health to detect issues and identify root causes.',
+      'An explainable agentic NOC that automates infrastructure diagnosis using structured operational evidence and multi-agent AI reasoning.',
     highlights: [
-      'Engineered a modular Python-based diagnostics engine supporting system (CPU, memory, disk) and network/application (DNS, Ping, TCP ports, HTTP, SSL, service) health monitoring.',
-      'Built an extensible probe framework that produces structured evidence for AI-driven diagnosis, allowing new monitoring capabilities to be added with minimal code changes.',
-      'Implemented an end-to-end AI-assisted observability pipeline using Spring Boot, React, Redis, Docker, and LangGraph for asynchronous diagnostics, root cause analysis, confidence scoring, and remediation suggestions.',
+      'Engineered a modular Python diagnostics engine for network, application, and system health monitoring, including DNS, Ping, TCP, HTTP, SSL, CPU, memory, disk, and services.',
+      'Built an event-driven evidence pipeline using Redis Streams to asynchronously connect infrastructure diagnostics with LangGraph-based multi-agent reasoning.',
+      'Implemented explainable root-cause analysis using specialized agents and a Supervisor Agent to correlate evidence, rank hypotheses, assign confidence scores, and support human validation.'
     ],
   },
 
