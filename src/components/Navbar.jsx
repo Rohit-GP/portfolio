@@ -40,7 +40,7 @@ function Navbar() {
         </nav>
 
         <a
-          href="/resume.pdf"
+          href="/resume1.pdf"
           className="navbar__cta navbar__cta--desktop"
           target="_blank"
         >
